@@ -6,6 +6,7 @@ Java library for easily integrate web and mobile payments with [pesapal.com](www
 
 Can see an example [here](https://github.com/bubinimara/PesapalAndroidTest)
 
+First of all [Download](https://github.com/bubinimara/PesapaJavaLib/releases) and include the library.
 
 **Initialize**
 
@@ -27,14 +28,14 @@ builder
 .name("lib", "newlib");
 ```
 
-**Build the signed URL for send requets**
+**Get the signed URL for send requets**
 ```
 PostRequest req = builder.build();
 String url = req.getURL(); // send it 
 
 ```
 
-**Build a signed URL for get the status**
+**Get a signed URL for get the status**
 
 ```
 IpnRequestStatus request = new IpnRequestStatus(id,reference);
